@@ -17,16 +17,12 @@ export default function Contact() {
           <h4 className="font-bold">Email</h4>
           <p className="text-zinc-500 text-sm">Send a message</p>
         </a>
-
-        
-        <a href="https://www.linkedin.com/in/yusuf-mia" target="_blank" className="p-8 bg-[#111827] border border-zinc-800 rounded-2xl hover:border-[#4f46e5] transition group">
+        <a href="https://www.linkedin.com/in/miraz-ahammed" target="_blank" className="p-8 bg-[#111827] border border-zinc-800 rounded-2xl hover:border-[#4f46e5] transition group">
           <FaLinkedin className="text-3xl mx-auto mb-4 text-[#38bdf8] group-hover:scale-110 transition" />
           <h4 className="font-bold">LinkedIn</h4>
           <p className="text-zinc-500 text-sm">Let's connect</p>
         </a>
-
-       
-        <a href="https://github.com/parvezpatwaryy" target="_blank" className="p-8 bg-[#111827] border border-zinc-800 rounded-2xl hover:border-[#4f46e5] transition group">
+        <a href="https://github.com/miraz-ahammed" target="_blank" className="p-8 bg-[#111827] border border-zinc-800 rounded-2xl hover:border-[#4f46e5] transition group">
           <FaGithub className="text-3xl mx-auto mb-4 text-white group-hover:scale-110 transition" />
           <h4 className="font-bold">GitHub</h4>
           <p className="text-zinc-500 text-sm">Check my code</p>
@@ -34,7 +30,7 @@ export default function Contact() {
       </div>
       
       <div className="mt-16 text-zinc-600 text-sm italic">
-        Designed & Built by Md Miraz © 2026
+        Designed & Built by Miraz Ahammed © 2026
       </div>
     </section>
   );

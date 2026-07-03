@@ -7,15 +7,29 @@ const projectList = [
     desc: "Premium tiles showcase with marquee and auth.",
     tech: ["Next.js", "Tailwind", "JSON Server"],
     live: "https://assignment-seven-six.vercel.app/",
-    github: "https://github.com/parvezpatwaryy/Assignment-seven"
+    github: "https://github.com/miraz-ahammed/Assignment-seven"
   },
   {
     name: "GitHub Tracker",
     desc: "Real-time issue tracking using GitHub API.",
     tech: ["React", "API", "CSS"],
     live: "https://assignment-eight-project-jbqf.vercel.app/",
-    github: "https://github.com/parvezpatwaryy/assignment-eight-project"
-  }
+    github: "https://github.com/miraz-ahammed/assignment-eight-project"
+  },
+  {
+    name: "SkillSwap",
+    desc: "Freelance Micro-Task Marketplace with 3-role system, Stripe payments, and real-time search.",
+    tech: ["React", "Node.js", "MongoDB", "BetterAuth", "Stripe"],
+    live: "https://skillswap-client-snowy.vercel.app/",
+    github: "https://github.com/miraz-ahammed/skillswap-client"
+  },
+  {
+    name: "IdeaVault",
+    desc: "Creative Idea Management app for capturing and organizing ideas with robust backend.",
+    tech: ["React", "Node.js", "MongoDB"],
+    live: "https://ideavault-frontend-three.vercel.app/",
+    github: "https://github.com/miraz-ahammed/ideavault-frontend"
+  },
 ];
 
 export default function Projects() {

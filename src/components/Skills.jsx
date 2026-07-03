@@ -1,12 +1,11 @@
 import React from 'react';
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGitAlt, FaFigma } from 'react-icons/fa';
-import { SiTypescript, SiNextdotjs, SiTailwindcss, SiMongodb } from 'react-icons/si';
+import { SiNextdotjs, SiTailwindcss, SiMongodb } from 'react-icons/si';
 
 const skills = [
   { name: "HTML", icon: <FaHtml5 className="text-[#e34f26]" /> },
   { name: "CSS", icon: <FaCss3Alt className="text-[#1572b6]" /> },
   { name: "JavaScript", icon: <FaJs className="text-[#f7df1e]" /> },
-  { name: "TypeScript", icon: <SiTypescript className="text-[#3178c6]" /> },
   { name: "React", icon: <FaReact className="text-[#61dbfb]" /> },
   { name: "Next.js", icon: <SiNextdotjs className="text-white" /> },
   { name: "Tailwind CSS", icon: <SiTailwindcss className="text-[#38bdf8]" /> },

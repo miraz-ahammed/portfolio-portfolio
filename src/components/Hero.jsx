@@ -31,11 +31,11 @@ export default function Hero() {
 
   return (
     <section ref={heroRef} className="min-h-screen bg-[#0a0f1a] text-white p-6 lg:p-12 flex flex-col overflow-hidden">
-      
+
       <nav className="flex justify-between items-center py-4 border-b border-zinc-800">
         <div className="flex items-center gap-2">
-          <span className="text-[#38bdf8] text-2xl font-black">MR</span>
-          <h1 className="text-xl font-semibold">Md Miraz</h1>
+          <span className="text-[#38bdf8] text-2xl font-black">Miraz</span>
+          <h1 className="text-xl font-semibold">Ahammed</h1>
         </div>
         <div className="hidden md:flex items-center gap-8 text-zinc-300">
           <a href="#" className="px-4 py-1 bg-[#4f46e5] text-white rounded-full">Home</a>
@@ -54,12 +54,12 @@ export default function Hero() {
       <div className="flex-grow flex flex-col md:flex-row items-center justify-around mt-10">
         <div className="max-w-xl text-center md:text-left hero-content">
           <p className="text-zinc-400 text-lg tracking-wider">HI, I'M</p>
-          <h1 className="text-6xl md:text-7xl font-bold my-2">Md Miraz</h1>
+          <h1 className="text-6xl md:text-7xl font-bold my-2">Miraz Ahammed</h1>
           <h2 className="text-2xl md:text-3xl font-medium mb-6">
             Frontend <span className="text-[#2563eb]">Next.js</span> Developer
           </h2>
           <p className="text-zinc-400 mb-10 leading-relaxed">
-            I build modern, responsive and user-friendly web applications with Next.js. 
+            I build modern, responsive and user-friendly web applications with Next.js.
             I specialize in creating high-performance digital experiences.
           </p>
 
@@ -79,22 +79,21 @@ export default function Hero() {
           <div>
             <p className="text-zinc-500 mb-4 uppercase text-xs tracking-[3px]">Follow me on</p>
             <div className="flex gap-5 text-xl justify-center md:justify-start">
-              <a href="https://github.com" target="_blank" className="hover:text-[#4f46e5] transition-colors"><FaGithub /></a>
-              <a href="https://linkedin.com" target="_blank" className="hover:text-[#4f46e5] transition-colors"><FaLinkedinIn /></a>
-              <a href="https://twitter.com" target="_blank" className="hover:text-[#4f46e5] transition-colors"><FaTwitter /></a>
-              <a href="https://facebook.com" target="_blank" className="hover:text-[#4f46e5] transition-colors"><FaFacebookF /></a>
+              <a href="https://github.com/miraz-ahammed" target="_blank" className="hover:text-[#4f46e5] transition-colors"><FaGithub /></a>
+              <a href="https://www.linkedin.com/in/miraz-ahammed
+              " target="_blank" className="hover:text-[#4f46e5] transition-colors"><FaLinkedinIn /></a>
             </div>
           </div>
         </div>
         <div ref={imgRef} className="relative mt-16 md:mt-0">
           <div className="w-[300px] h-[300px] md:w-[450px] md:h-[450px] rounded-full border-4 border-[#4f46e5] p-3 shadow-[0_0_50px_rgba(79,70,229,0.3)]">
-            <img 
-              src="/parvez.jpg" 
+            <img
+              src="/parvez.jpg"
               alt="Md Miraz"
               className="w-full h-full object-cover rounded-full bg-slate-800"
             />
           </div>
-        
+
           <div className="absolute -top-5 -right-5 w-6 h-6 bg-[#4f46e5] rounded-full blur-md animate-pulse"></div>
           <div className="absolute -bottom-5 -left-5 w-8 h-8 bg-[#38bdf8] rounded-full blur-lg opacity-50"></div>
         </div>
