@@ -1,4 +1,4 @@
-%PDF-1.1
+%PDF-1.3
 1 0 obj
 << /Type /Catalog /Pages 2 0 R >>
 endobj
@@ -6,12 +6,48 @@ endobj
 << /Type /Pages /Kids [3 0 R] /Count 1 >>
 endobj
 3 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 200 200] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
 endobj
 4 0 obj
-<< /Length 42 >>
+<< /Length 692 >>
 stream
-BT /F1 24 Tf 10 160 Td (Miraz Ahammed) Tj
+BT
+/F1 20 Tf
+40 780 Td (Miraz Ahammed) Tj
+0 -28 Td (Frontend Web Developer) Tj
+0 -40 Td (Email: tanjilapatwaryy@gmail.com  |  Phone: 01872249768) Tj
+0 -24 Td (LinkedIn: https://linkedin.com/in/miraz-ahammed  |  GitHub: https://github.com/miraz-ahammed) Tj
+0 -32 Td (Location: Bangladesh) Tj
+0 -40 Td ( ) Tj
+ /F1 14 Tf
+0 -18 Td (Professional Summary) Tj
+0 -20 Td (Dedicated and skilled Frontend Web Developer with a passion for building modern, responsive, and user-friendly web applications.) Tj
+0 -18 Td (Focused on delivering high-performance digital experiences using Next.js, React.js, and Tailwind CSS.) Tj
+0 -24 Td ( ) Tj
+0 -18 Td (Technical Skills) Tj
+0 -18 Td (- Languages: HTML5, CSS3, JavaScript (ES6+)) Tj
+0 -18 Td (- Frameworks/Libraries: React.js, Next.js) Tj
+0 -18 Td (- Styling: Tailwind CSS) Tj
+0 -18 Td (- Tools: VS Code, Git, GitHub) Tj
+0 -18 Td (- Operating Systems: Windows 10) Tj
+0 -24 Td ( ) Tj
+0 -18 Td (Projects) Tj
+0 -18 Td (1. Tiles Gallery) Tj
+0 -18 Td (2. GitHub Issues Tracker) Tj
+0 -18 Td (3. SkillSwap) Tj
+0 -18 Td (4. IdeaVault) Tj
+0 -24 Td ( ) Tj
+0 -18 Td (Education) Tj
+0 -18 Td (- Habibullah Bahar College) Tj
+0 -24 Td ( ) Tj
+0 -18 Td (Languages) Tj
+0 -18 Td (- Bengali - Native) Tj
+0 -18 Td (- English - Professional) Tj
+0 -24 Td ( ) Tj
+0 -18 Td (Soft Skills) Tj
+0 -18 Td (- Team Collaboration & Communication) Tj
+0 -18 Td (- Problem Solving & Analytical Thinking) Tj
+0 -18 Td (- Fast Learner & Adaptable to new technologies) Tj
 ET
 endstream
 endobj
@@ -24,12 +60,12 @@ xref
 0000000009 00000 n 
 0000000067 00000 n 
 0000000125 00000 n 
-0000000251 00000 n 
-0000000346 00000 n 
+0000000210 00000 n 
+0000001000 00000 n 
 trailer
 << /Size 6 /Root 1 0 R >>
 startxref
-408
+1100
 %%EOF
 Miraz Ahammed Frontend Web Developer Email: tanjilapatwaryy@gmail.com | Phone: 01872249768 LinkedIn: linkedin.com/in/miraz-ahammed | GitHub: github.com/miraz-ahammed Location: Bangladesh
 Professional Summary Dedicated and skilled Frontend Web Developer with a passion for building modern, responsive, and user-friendly web applications. Focused on delivering high-performance digital experiences using Next.js, React.js, and Tailwind CSS.
