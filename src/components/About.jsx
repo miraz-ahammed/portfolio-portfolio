@@ -28,7 +28,7 @@ export default function About() {
         <div className="flex-1">
           <h2 className="text-4xl font-bold mb-6 border-l-4 border-[#4f46e5] pl-4">About Me</h2>
           <p className="text-zinc-400 text-lg leading-relaxed mb-6">
-            I'm a passionate <span className="text-white font-semibold">Frontend Next.js Developer</span> who loves turning complex problems into simple, beautiful, and intuitive designs. 
+            I&apos;m a passionate <span className="text-white font-semibold">Frontend Next.js Developer</span> who loves turning complex problems into simple, beautiful, and intuitive designs. 
           </p>
           <p className="text-zinc-400 leading-relaxed mb-8">
             Currently, I am a student at <span className="text-[#38bdf8]">Habibullah Bahar College</span>. My journey in web development started with a curiosity about how things work on the internet, which led me to master modern technologies like React and Next.js. I focus on building fast, responsive, and user-centric web applications.

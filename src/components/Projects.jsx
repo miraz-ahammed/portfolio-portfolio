@@ -51,8 +51,8 @@ export default function Projects() {
                 {p.name}
               </h3>
               <div className="flex gap-4 text-zinc-400">
-                <a href={p.github} target="_blank" className="hover:text-white transition"><FaGithub size={20} /></a>
-                <a href={p.live} target="_blank" className="hover:text-white transition"><FaExternalLinkAlt size={18} /></a>
+                <a href={p.github} target="_blank" rel="noopener noreferrer" className="hover:text-white transition"><FaGithub size={20} /></a>
+                <a href={p.live} target="_blank" rel="noopener noreferrer" className="hover:text-white transition"><FaExternalLinkAlt size={18} /></a>
               </div>
             </div>
 

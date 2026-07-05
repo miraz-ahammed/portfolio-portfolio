@@ -41,3 +41,26 @@ body {
   color: var(--color-text-main);
   font-family: var(--font-sans);
 }
+
+/* Skip link - visible when focused */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.skip-link:focus,
+.skip-link:active {
+  position: fixed;
+  left: 1rem;
+  top: 1rem;
+  width: auto;
+  height: auto;
+  padding: 0.5rem 0.75rem;
+  background: var(--color-card);
+  color: var(--color-text-main);
+  border-radius: 6px;
+  z-index: 9999;
+}

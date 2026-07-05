@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Yusuf Mia | Portfolio", 
+  title: "Miraz Ahammed | Portfolio",
   description: "Frontend Web Developer Portfolio",
 };
 
@@ -23,7 +23,18 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} antialiased`}
     >
+      <head>
+        <meta name="description" content="Frontend Web Developer Portfolio" />
+        <meta property="og:title" content="Miraz Ahammed | Portfolio" />
+        <meta property="og:description" content="Frontend Web Developer Portfolio" />
+        <meta property="og:image" content="/parvez.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Miraz Ahammed | Portfolio" />
+        <meta name="twitter:description" content="Frontend Web Developer Portfolio" />
+        <link rel="icon" href="/favicon.svg" />
+      </head>
       <body className="min-h-screen flex flex-col">
+        <a href="#main-content" className="skip-link">Skip to content</a>
         <SmoothScrolling>
           {children}
         </SmoothScrolling>
