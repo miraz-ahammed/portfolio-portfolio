@@ -1,58 +1,22 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
-
-const projectList = [
-  {
-    name: "Tiles Gallery",
-    desc: "Premium tiles showcase with smooth animation, auth, and polished UI.",
-    tech: ["Next.js", "Tailwind", "JSON Server"],
-    live: "https://assignment-eight-project-jbqf.vercel.app/",
-    github: "https://github.com/miraz-ahammed/assignment-eight-project",
-    previewImage: "/screenshots/tiles-gallery.svg",
-    accent: "from-fuchsia-500/20 via-violet-500/10 to-slate-900"
-  },
-  {
-    name: "Keenkeeper",
-    desc: "Relationship tracking dashboard with status cards and smooth filtering.",
-    tech: ["React", "API", "CSS"],
-    live: "https://assignment-seven-six.vercel.app/",
-    github: "https://github.com/miraz-ahammed/Assignment-seven",
-    previewImage: "/screenshots/keenkeeper.svg",
-    accent: "from-emerald-500/20 via-emerald-400/10 to-slate-900"
-  },
-  {
-    name: "SkillSwap",
-    desc: "Marketplace app with auth, Stripe checkout, and dynamic search.",
-    tech: ["React", "Node.js", "MongoDB", "BetterAuth", "Stripe"],
-    live: "https://skillswap-client-snowy.vercel.app/",
-    github: "https://github.com/miraz-ahammed/skillswap-client",
-    previewImage: "/screenshots/skillswap.svg",
-    accent: "from-cyan-500/20 via-sky-500/10 to-slate-900"
-  },
-  {
-    name: "IdeaVault",
-    desc: "Secure notes dashboard with categories, search, and encrypted storage.",
-    tech: ["React", "Node.js", "MongoDB"],
-    live: "https://ideavault-frontend-three.vercel.app/",
-    github: "https://github.com/miraz-ahammed/ideavault-frontend",
-    previewImage: "/screenshots/ideavault.svg",
-    accent: "from-indigo-500/20 via-violet-500/10 to-slate-900"
-  },
-];
+import { FiArrowRight } from 'react-icons/fi';
+import projectList from '../data/projects';
 
 export default function Projects() {
   return (
-    
+
     <section id="projects_section" className="py-20 px-6 max-w-7xl mx-auto text-white">
       <h2 className="text-4xl font-bold mb-12 border-l-4 border-[#4f46e5] pl-4">
         Featured Projects
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-        {projectList.map((p, i) => (
+        {projectList.map((p) => (
           <div
-            key={i}
+            key={p.slug}
             className="overflow-hidden rounded-[2rem] border border-zinc-800 bg-[#111827] shadow-xl transition-all duration-300 hover:-translate-y-1 hover:border-[#4f46e5]/50"
           >
             <div className="relative h-64 overflow-hidden rounded-t-[2rem] bg-slate-950">
@@ -92,15 +56,22 @@ export default function Projects() {
                 </div>
               </div>
 
-              <p className="text-zinc-400 leading-relaxed mb-8 min-h-[60px]">{p.desc}</p>
+              <p className="text-zinc-400 leading-relaxed mb-6 min-h-[60px]">{p.desc}</p>
 
-              <div className="grid grid-cols-2 gap-3">
+              <div className="grid grid-cols-2 gap-3 mb-6">
                 {p.tech.map((t) => (
                   <span key={t} className="rounded-2xl border border-zinc-700 bg-[#111827] px-4 py-3 text-xs font-semibold uppercase tracking-[0.25em] text-[#38bdf8]">
                     {t}
                   </span>
                 ))}
               </div>
+
+              <Link
+                href={`/projects/${p.slug}`}
+                className="inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-[#4f46e5] px-4 py-3 text-sm font-semibold text-white transition hover:brightness-105"
+              >
+                View Details <FiArrowRight size={16} />
+              </Link>
             </div>
           </div>
         ))}
