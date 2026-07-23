@@ -1,37 +1,42 @@
 import React from 'react';
+import Image from 'next/image';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
 const projectList = [
   {
     name: "Tiles Gallery",
-    desc: "Premium tiles showcase with marquee and auth.",
+    desc: "Premium tiles showcase with smooth animation, auth, and polished UI.",
     tech: ["Next.js", "Tailwind", "JSON Server"],
     live: "https://assignment-eight-project-jbqf.vercel.app/",
     github: "https://github.com/miraz-ahammed/assignment-eight-project",
+    previewImage: "/screenshots/tiles-gallery.svg",
     accent: "from-fuchsia-500/20 via-violet-500/10 to-slate-900"
   },
   {
     name: "Keenkeeper",
-    desc: "Personal relationship tracker with attention status cards.",
+    desc: "Relationship tracking dashboard with status cards and smooth filtering.",
     tech: ["React", "API", "CSS"],
     live: "https://assignment-seven-six.vercel.app/",
     github: "https://github.com/miraz-ahammed/Assignment-seven",
+    previewImage: "/screenshots/keenkeeper.svg",
     accent: "from-emerald-500/20 via-emerald-400/10 to-slate-900"
   },
   {
     name: "SkillSwap",
-    desc: "Freelance marketplace with auth, Stripe payments, and real-time search.",
+    desc: "Marketplace app with auth, Stripe checkout, and dynamic search.",
     tech: ["React", "Node.js", "MongoDB", "BetterAuth", "Stripe"],
     live: "https://skillswap-client-snowy.vercel.app/",
     github: "https://github.com/miraz-ahammed/skillswap-client",
+    previewImage: "/screenshots/skillswap.svg",
     accent: "from-cyan-500/20 via-sky-500/10 to-slate-900"
   },
   {
     name: "IdeaVault",
-    desc: "Creative idea manager with secure notes and filterable categories.",
+    desc: "Secure notes dashboard with categories, search, and encrypted storage.",
     tech: ["React", "Node.js", "MongoDB"],
     live: "https://ideavault-frontend-three.vercel.app/",
     github: "https://github.com/miraz-ahammed/ideavault-frontend",
+    previewImage: "/screenshots/ideavault.svg",
     accent: "from-indigo-500/20 via-violet-500/10 to-slate-900"
   },
 ];
@@ -50,14 +55,30 @@ export default function Projects() {
             key={i}
             className="overflow-hidden rounded-[2rem] border border-zinc-800 bg-[#111827] shadow-xl transition-all duration-300 hover:-translate-y-1 hover:border-[#4f46e5]/50"
           >
-            <div className={`relative h-64 bg-gradient-to-br ${p.accent}`}>
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(79,70,229,0.45),_transparent_40%)]" />
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_right,_rgba(56,189,248,0.25),_transparent_30%)]" />
-              <div className="absolute inset-x-0 bottom-0 p-6">
-                <div className="max-w-xs rounded-3xl border border-white/10 bg-white/10 p-4 backdrop-blur-sm">
-                  <p className="text-xs uppercase tracking-[0.3em] text-slate-300">Live preview</p>
-                  <h3 className="mt-3 text-2xl font-bold text-white">{p.name}</h3>
-                  <p className="mt-2 text-sm text-slate-300">{p.desc}</p>
+            <div className="relative h-64 overflow-hidden rounded-t-[2rem] bg-slate-950">
+              <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 opacity-95" />
+              <Image
+                src={p.previewImage}
+                alt={`${p.name} screenshot preview`}
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
+              <div className="absolute inset-x-0 top-4 mx-6 flex items-center justify-between text-xs text-slate-200">
+                <div className="flex items-center gap-2">
+                  <span className="h-2.5 w-2.5 rounded-full bg-red-400" />
+                  <span className="h-2.5 w-2.5 rounded-full bg-amber-300" />
+                  <span className="h-2.5 w-2.5 rounded-full bg-emerald-400" />
+                </div>
+                <span className="rounded-full bg-white/10 px-3 py-1 backdrop-blur-sm">{p.name.toLowerCase().replace(/ /g, '-')}.vercel.app</span>
+              </div>
+              <div className="absolute inset-x-6 bottom-6 rounded-[1.75rem] border border-white/10 bg-black/40 p-5 shadow-xl shadow-black/40 backdrop-blur-sm">
+                <div className="mb-4 h-3 w-24 rounded-full bg-white/20" />
+                <div className="mb-3 h-3 w-20 rounded-full bg-white/15" />
+                <div className="mb-3 h-12 rounded-2xl bg-white/20" />
+                <div className="flex gap-2 mt-4">
+                  <span className="h-3 flex-1 rounded-full bg-white/15" />
+                  <span className="h-3 flex-1 rounded-full bg-white/10" />
                 </div>
               </div>
             </div>

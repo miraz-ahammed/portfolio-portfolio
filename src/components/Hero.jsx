@@ -6,7 +6,6 @@ import gsap from 'gsap';
 
 export default function Hero() {
   const heroRef = useRef(null);
-  const textRef = useRef(null);
   const imgRef = useRef(null);
   const [open, setOpen] = useState(false);
 
@@ -55,32 +54,46 @@ export default function Hero() {
           <h1 className="text-xl font-semibold">Ahammed</h1>
         </div>
         <div className="hidden md:flex items-center gap-8 text-zinc-300">
-          <a href="#" className="px-4 py-1 bg-[#4f46e5] text-white rounded-full">Home</a>
+          <a href="#main-content" className="px-4 py-1 bg-[#4f46e5] text-white rounded-full">Home</a>
           <a href="#about" className="hover:text-white transition">About</a>
           <a href="#skills" className="hover:text-white transition">Skills</a>
           <a href="#projects_section" className="hover:text-white transition">Projects</a>
           <a href="#contact" className="hover:text-white transition">Contact</a>
         </div>
         <button
+          type="button"
           aria-label="Toggle menu"
-          className="md:hidden p-2 rounded-md text-zinc-300 hover:bg-zinc-800"
+          aria-expanded={open}
+          className="md:hidden rounded-xl border border-zinc-700 bg-[#0f172a] p-3 text-zinc-300 shadow-sm transition hover:bg-zinc-800"
           onClick={() => setOpen(!open)}
         >
           {open ? '✕' : '☰'}
         </button>
-        <a href="/my-cv.pdf" download>
-          <button className="px-5 py-2 border border-zinc-700 rounded-full flex items-center gap-2 hover:bg-zinc-800 transition">
-            Download CV <span>↓</span>
+        <a href="/my-cv.pdf" download className="hidden md:inline-block">
+          <button className="px-4 py-2 border border-zinc-700 rounded-full flex items-center gap-2 hover:bg-zinc-800 transition text-sm">
+            Download CV <span className="ml-1">↓</span>
           </button>
         </a>
         {open && (
-          <div className="md:hidden absolute top-full right-4 mt-2 w-52 bg-[#071126] border border-zinc-800 rounded-lg p-3 z-50">
-            <a href="#" className="block py-2 px-3 rounded hover:bg-zinc-900">Home</a>
-            <a href="#about" className="block py-2 px-3 rounded hover:bg-zinc-900">About</a>
-            <a href="#skills" className="block py-2 px-3 rounded hover:bg-zinc-900">Skills</a>
-            <a href="#projects_section" className="block py-2 px-3 rounded hover:bg-zinc-900">Projects</a>
-            <a href="#contact" className="block py-2 px-3 rounded hover:bg-zinc-900">Contact</a>
-          </div>
+          <>
+            <div className="fixed inset-0 z-40 bg-black/40 md:hidden" onClick={() => setOpen(false)} />
+            <div className="fixed right-0 top-0 z-50 h-full w-72 bg-[#071126] p-6 shadow-2xl md:hidden">
+              <div className="mb-8 flex items-center justify-between">
+                <span className="text-lg font-semibold text-white">Menu</span>
+                <button type="button" aria-label="Close menu" className="text-zinc-300" onClick={() => setOpen(false)}>✕</button>
+              </div>
+              <nav className="space-y-4">
+                <a href="#main-content" onClick={() => setOpen(false)} className="block rounded-2xl px-4 py-3 text-lg text-white hover:bg-zinc-900 transition">Home</a>
+                <a href="#about" onClick={() => setOpen(false)} className="block rounded-2xl px-4 py-3 text-lg text-white hover:bg-zinc-900 transition">About</a>
+                <a href="#skills" onClick={() => setOpen(false)} className="block rounded-2xl px-4 py-3 text-lg text-white hover:bg-zinc-900 transition">Skills</a>
+                <a href="#projects_section" onClick={() => setOpen(false)} className="block rounded-2xl px-4 py-3 text-lg text-white hover:bg-zinc-900 transition">Projects</a>
+                <a href="#contact" onClick={() => setOpen(false)} className="block rounded-2xl px-4 py-3 text-lg text-white hover:bg-zinc-900 transition">Contact</a>
+              </nav>
+              <div className="mt-6">
+                <a href="/my-cv.pdf" download onClick={() => setOpen(false)} className="block w-full text-center px-4 py-3 bg-[#4f46e5] text-white rounded-2xl font-semibold shadow hover:brightness-105 transition">Download CV ↓</a>
+              </div>
+            </div>
+          </>
         )}
       </nav>
 
@@ -89,7 +102,7 @@ export default function Hero() {
           <p className="text-zinc-400 text-lg tracking-wider">HI, I&apos;M</p>
           <h1 className="text-6xl md:text-7xl font-bold my-2">Miraz Ahammed</h1>
           <h2 className="text-2xl md:text-3xl font-medium mb-6">
-            Frontend <span className="text-[#2563eb]">Next.js</span> Developer
+            Full Stack <span className="text-[#2563eb]">Next.js</span> Developer
           </h2>
           <p className="text-zinc-400 mb-10 leading-relaxed">
             I build modern, responsive and user-friendly web applications with Next.js.

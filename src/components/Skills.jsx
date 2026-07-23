@@ -3,16 +3,16 @@ import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGitAlt, FaFigma } from '
 import { SiNextdotjs, SiTailwindcss, SiMongodb } from 'react-icons/si';
 
 const skills = [
+  { name: "Next.js", icon: <SiNextdotjs className="text-white" /> },
+  { name: "Node.js", icon: <FaNodeJs className="text-[#339933]" /> },
+  { name: "React", icon: <FaReact className="text-[#61dbfb]" /> },
+  { name: "JavaScript", icon: <FaJs className="text-[#f7df1e]" /> },
+  { name: "MongoDB", icon: <SiMongodb className="text-[#47a248]" /> },
+  { name: "Figma", icon: <FaFigma className="text-[#f24e1e]" /> },
+  { name: "Git", icon: <FaGitAlt className="text-[#f1502f]" /> },
+  { name: "Tailwind CSS", icon: <SiTailwindcss className="text-[#38bdf8]" /> },
   { name: "HTML", icon: <FaHtml5 className="text-[#e34f26]" /> },
   { name: "CSS", icon: <FaCss3Alt className="text-[#1572b6]" /> },
-  { name: "JavaScript", icon: <FaJs className="text-[#f7df1e]" /> },
-  { name: "React", icon: <FaReact className="text-[#61dbfb]" /> },
-  { name: "Next.js", icon: <SiNextdotjs className="text-white" /> },
-  { name: "Tailwind CSS", icon: <SiTailwindcss className="text-[#38bdf8]" /> },
-  { name: "Node.js", icon: <FaNodeJs className="text-[#339933]" /> },
-  { name: "MongoDB", icon: <SiMongodb className="text-[#47a248]" /> },
-  { name: "Git", icon: <FaGitAlt className="text-[#f1502f]" /> },
-  { name: "Figma", icon: <FaFigma className="text-[#f24e1e]" /> },
 ];
 
 export default function Skills() {

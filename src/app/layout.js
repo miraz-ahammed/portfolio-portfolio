@@ -24,6 +24,7 @@ export default function RootLayout({ children }) {
       className={`${geistSans.variable} ${geistMono.variable} antialiased`}
     >
       <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Frontend Web Developer Portfolio" />
         <meta property="og:title" content="Miraz Ahammed | Portfolio" />
         <meta property="og:description" content="Frontend Web Developer Portfolio" />
